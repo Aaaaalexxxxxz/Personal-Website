@@ -1,0 +1,38 @@
+.contact {
+    background-color: rgb(50,50,50);
+    display: inline-block;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    font-size: 2em;
+}
+
+.contact h1{
+    color:rgb(243, 243, 237);
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+} 
+
+.contactbody {
+    display: block;
+}
+
+.hori {
+    position: relative;
+
+    border: 2px solid white;
+    height: 60vh;
+    width: 0;
+    border-radius: 10px;
+
+}
+.resume{
+    position: relative;
+    align-items: center;
+    display: block;
+    max-width: 500px;
+    float: left;
+    margin-left: 10%;
+}
