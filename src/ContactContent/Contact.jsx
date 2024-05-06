@@ -1,25 +1,21 @@
 import styles from './Contact.module.css'
-import resume from '../assets/Parking Pass.pdf'
-import image from '../assets/WechatIMG1559.jpg'
+import {MdEmail} from "react-icons/md"
+import { FaLinkedin, FaGithub, FaFacebook} from "react-icons/fa"
 function Contact(){
     return(
         <section id='contactsection' className={styles.contact}>
-            <div>
                 <h1 className={styles.title}>Contact</h1>
                 <div className={styles.contactbody}>
-                    <div className={styles.resume}>
-                    <img src={image} width="300" ></img>
+                    <div className={styles.contactmethod}>
+                        <MdEmail/><a href='mailto: a355zhan@uwaterloo.ca'>a355zhan@uwaterloo.ca</a>
                     </div>
-                    <div className = {styles.hori}></div>
-                    <div className = {styles.methods}>
-                       <ul>
-                        <li>
-                            
-                        </li>
-                       </ul>
+                    <div className={styles.contactmethod}> 
+                        <FaLinkedin/><a href='https://www.linkedin.com/in/alexzhanglm/'>alexzhanglm</a>
+                    </div>
+                    <div className={styles.contactmethod}>
+                        <FaGithub/><a href="https://github.com/Aaaaalexxxxxz">Aaaaalexxxxxz</a>
                     </div>
                 </div>
-            </div>
         </section>
     );
 }

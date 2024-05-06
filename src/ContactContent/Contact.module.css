@@ -17,22 +17,32 @@
 
 .contactbody {
     display: block;
+    margin: auto;
+    width: 100vh;
+    background-color: rgb(70,70,70);
+    border-radius: 7%;
+    border: 2px solid rgb(243, 243, 237);
+}
+.contacts {
+    
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.contactmethod {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    font-size: 1.8em;
 }
 
-.hori {
-    position: relative;
-
-    border: 2px solid white;
-    height: 60vh;
-    width: 0;
-    border-radius: 10px;
-
+.contactmethod a {
+    text-decoration: none;
+    color: rgb(100,100,100);
+    transition: color 0.35s;
 }
-.resume{
-    position: relative;
-    align-items: center;
-    display: block;
-    max-width: 500px;
-    float: left;
-    margin-left: 10%;
+
+.contactmethod a:hover {
+    color: rgb(243, 243, 237);
 }

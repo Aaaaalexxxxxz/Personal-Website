@@ -1,5 +1,5 @@
 import styles from './Project.module.css'
-import gege from '../assets/gege.jpeg'
+import gege from '../assets/Favicon.png'
 
 function Projectcontent(){
     return(

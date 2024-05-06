@@ -7,6 +7,9 @@ const pink = {color : "pink",}
 const blue = {color: "lightblue",}
 const link = {text_decoration:"none",
                 color: "lightyellow"}
+const purple = {color: "#cd9cff"}
+const yellow = {color: "#ffed9c"}
+const red = {color: "#b5fff3"}
 function Aboutcontent(){
     return(
         <><section id="aboutsection" className={styles.about}>
@@ -17,12 +20,15 @@ function Aboutcontent(){
                 <div className={styles.aboutme}>
                     <h3>Who am I?</h3>
                     <div>I am a <span style={blue}>Frontend Developer</span>,
-                        <span style={pink}> Mathematics</span> student at the <a href='uwaterloo.ca' style = {link}>University of Waterloo</a></div>
-            </div>
-            <img className={styles.image} src={codingpic}>
-
-            </img>
-        </section><section className={styles.skills}>
+                            <span style={pink}> Mathematics</span> student at the <a href='uwaterloo.ca' style = {link}>University of Waterloo</a>. I am passionate in Mathematics as well as computer science. 
+                            I have been developing some projects regarding computer science on my own, including frontend projects using 
+                            <span style={purple}> React</span>, <span style={yellow}> CSS</span>, and <span style={red}>Javascript</span>. I am also interested in the field
+                            of data science. 
+                    </div>
+                </div>
+                <img className={styles.image} src={codingpic}></img>
+            </section>
+        <section className={styles.skills}>
                 <div className={styles.texts}>
                     <h3 className={styles.title}>Relevent Skills</h3>
                     <div className={styles.skillgrid}>

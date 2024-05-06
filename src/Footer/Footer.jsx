@@ -8,7 +8,7 @@ function Footer(){
             <span className={styles.footer_right}>
                 <ul className={styles.contact}>
                     <li><a href="https://www.linkedin.com/in/alexzhanglm/"><FaLinkedin className={styles.icon} color='#F3F3ED'/></a></li>
-                    <li><a href="https://github.com/"><FaGithub className={styles.icon} color='#F3F3ED'/></a></li>
+                    <li><a href="https://github.com/Aaaaalexxxxxz"><FaGithub className={styles.icon} color='#F3F3ED'/></a></li>
                     <li><a href="#"><FaFacebook className={styles.icon} color='#F3F3ED'/></a></li>
                 </ul>
                 </span>

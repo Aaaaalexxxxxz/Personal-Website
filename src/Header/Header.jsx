@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import styles from './header.module.css'
 import{Link} from 'react-scroll'
 import {FaHome, FaAddressCard, FaUser, FaCode} from 'react-icons/fa'
-import Gege from '../assets/gege.jpeg'
+import Gege from '../assets/Favicon.png'
 function Header(){
 
 
