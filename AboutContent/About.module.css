@@ -1,0 +1,164 @@
+
+.about {
+    background-color: rgb(50,50,50);
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+.texts {
+    position: relative;
+    color: rgb(243, 243, 237);
+    font-size: 1.9em;
+    min-width: none;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.title {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.aboutcontent {
+    display: inline-flex;
+    position: relative;
+    color: rgb(243, 243, 237);
+    font-size: 1.5em;
+}
+
+.aboutme {
+    width: 55%;
+    margin: 5%;
+}
+
+.image {
+    width: 30%;
+    margin: 5%;
+}
+
+.skills {
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+    z-index: 2;
+}
+
+.skillgrid {
+    position: relative;
+    margin-left: 15%;
+    margin-right: 15%;
+    flex-wrap: wrap;
+}
+
+.skillcard {
+    position: static;
+    border: 1px solid hsl(0,0%,80%, 0.5);
+    border-radius: 10px;
+    flex: 33%;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.11);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    width: 130px;
+    height: 130px;
+    display: inline-block;
+    background-color: rgb(55,55,55);
+    transition: 0.3s background-color;
+}
+
+@media (max-width: 800px) {
+    .skillcard{
+      flex: 100%;
+    }
+  }
+.cardicon {
+    position: relative;
+    float:inline-start;
+    left: 10%;
+    height: 80px;
+    width: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15%;
+    margin-right: 15%;
+    transition: 0.3s color,
+                0.3s margin-top;
+}
+
+.skillcard:hover {
+    background-color: rgb(243, 243, 237);
+    border: 1.5px solid hsla(0, 3%, 80%, 0.568);
+}
+
+.skillcard:hover .cardicon{
+    color: #333331;
+    margin-top: 0;
+}
+
+.cardtext {
+    position: relative;
+    display: none;
+    font-size: 1.2em;
+    padding: auto;
+    margin-top: 10%;
+    text-align: center;
+    color: #333331;
+    font-weight: bold;
+}
+
+.skillcard:hover .cardtext {
+    display: block;
+}
+
+.ExpCard {
+    border: 2px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    width: 80%;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: rgb(243, 243, 237);
+}
+
+@media (max-width: 992px) {
+   .image {
+    display: none;
+   }
+   .aboutme {
+    margin:auto;
+   }
+   .aboutme h3{
+    text-align: center;
+   }
+   .texts h2{
+    margin-top: 40px;
+    margin-bottom: 20px;
+   }
+}
+
+@media (max-width: 607px) {
+    .skillcard {
+        width: 100px;
+        height: 100px;
+    }
+
+    .cardicon {
+        height: 60px;
+        width: 60px;
+    }
+
+    .cardtext {
+        font-size: 0.9em;
+    }
+
+    .skillgrid {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+.experience {
+    display: none;
+}

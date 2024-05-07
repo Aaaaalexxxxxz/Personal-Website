@@ -1,0 +1,208 @@
+.homeintro{
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgb(50,50,50);
+    background-size: cover;
+}
+.container {
+    height: 80vh;
+    padding: 10vh;
+    text-align: left;
+    margin:auto;
+    width: 60%;
+}
+.intro {
+    position: relative;
+    color: rgb(145, 145, 137);
+    font-size: 1.8rem;
+    padding-top: 10%;
+    justify-content: center;
+    font-weight: bold;
+}
+.name {
+    position: relative;
+    background-blend-mode: darken;
+    background-repeat: none;
+    float: left;
+    width: 100%;
+    font-weight: bold;
+    color: rgb(213, 213, 201);
+    font-size: 8rem;
+}
+
+.welcome {
+    position:relative;
+    font-size: 5rem;
+    color: rgb(180, 180, 170);
+    margin-bottom: 10%;
+}
+
+.type {
+    font-size: 3rem;
+}
+
+.typetext {
+    font-weight: bold;
+    color: rgb(166, 166, 155);
+}
+.animation {
+    height: 55px;
+    overflow:hidden;
+    margin-left: 1rem;
+}
+
+.animation > div > div {
+    padding: 0.25rem 0.75rem;
+    height:2.83rem;
+    margin-bottom: 2.81rem;
+    display:inline-block;
+}
+
+.animation div:first-child {
+    animation: text-animation 8s infinite;
+}
+
+.first div {
+    background-color:#1d284b;
+    color:rgb(180, 180, 170);
+}
+.second div {
+    background-color:#CD921E;
+    color:rgb(180, 180, 170);
+}
+.third div {
+    background-color:#2b0b41;
+    color:rgb(180, 180, 170);
+}
+
+@keyframes text-animation {
+    0% {margin-top: 0;}
+    10% {margin-top: 0;}
+    20% {margin-top: -5.62rem;}
+    30% {margin-top: -5.62rem;}
+    40% {margin-top: -11.24rem;}
+    60% {margin-top: -11.24rem;}
+    70% {margin-top: -5.62rem;}
+    80% {margin-top: -5.62rem;}
+    90% {margin-top: 0;}
+    100% {margin-top: 0;}
+}
+
+.more {
+    position: relative;
+    text-align: center;
+    margin-top: 5%;
+    height: auto;
+}
+
+.more a {
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    Color: rgb(180, 180, 170);
+    z-index: 2;
+    font-size: 1.5em;
+}
+html {
+    scroll-behavior: smooth;
+}
+.arrow {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    margin-top: 3%;
+}
+
+.arrow span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid rgb(180, 180, 170);
+    border-right: 5px solid rgb(180, 180, 170);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: pointdown 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes pointdown {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+@media (max-width: 1100px) {
+    .name {
+        font-size: 7rem;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        width: 70%;
+    }
+    .intro {
+        padding-top:8%;
+    }
+    .name {
+        font-size: 6.5rem;
+        padding-bottom: 10%;
+        padding-top: 10%;
+    }
+    .welcome {
+        font-size: 4.5rem;
+    }
+    .type {
+        display: none;
+    }
+    .arrow span {
+        width: 2.25vw;
+        height: 2.25vw;
+        border-bottom: 3.5px solid rgb(180, 180, 170);
+        border-right: 3.5px solid rgb(180, 180, 170);
+    }
+}
+@media (max-width: 607px) {
+    .container {
+        width: 80%;
+    }
+    .intro {
+        padding-top: 10%;
+    }
+    .name {
+        font-size: 5rem;
+        padding-bottom: 10%;
+        padding-top: 10%;
+    }
+    .welcome {
+        font-size: 3rem;
+    }
+    .type {
+        display: none;
+    }
+    .arrow span{
+        width: 3vw;
+        height: 3vw;
+        border-bottom: 2px solid rgb(180, 180, 170);
+        border-right: 2px solid rgb(180, 180, 170);
+    }
+    .title {
+        padding-top: 30%;
+    }
+}
+
