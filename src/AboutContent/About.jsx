@@ -1,7 +1,7 @@
 import styles from './About.module.css'
 import codingpic from '../assets/coding.jpg'
 import {FaHtml5, FaCss3, FaJava, FaNodeJs, FaPython, FaReact, FaLinux} from 'react-icons/fa'
-import {SiCplusplus, SiRacket, SiRstudio, SiJavascript, SiGnubash} from 'react-icons/si'
+import {SiCplusplus, SiRacket, SiRstudio, SiJavascript, SiGnubash, SiTypescript} from 'react-icons/si'
 
 const pink = {color : "pink",}
 const blue = {color: "lightblue",}
@@ -75,6 +75,10 @@ function Aboutcontent(){
                         <div className={styles.skillcard}>
                             <SiJavascript className={styles.cardicon} />
                             <p className={styles.cardtext}>JS</p>
+                        </div>
+                        <div className={styles.skillcard}>
+                            <SiTypescript className={styles.cardicon} />
+                            <p className={styles.cardtext}>TS</p>
                         </div>
                         <div className={styles.skillcard}>
                             <SiGnubash className={styles.cardicon} />

@@ -13,18 +13,19 @@
 }
 
 .projectgrid {
-    display: block;
-    margin-left: 15vh;
-    margin-right: 15vh;
+    position: relative;
+    display: inline-block;
+    margin: auto;
 }
 
 .projectcard {
-    position: relative;
-    width: 450px;
+    position: static;
+    width: 400px;
     border: 2px solid hsla(0, 0%, 100%, 0.8);
     border-radius: 10px;
     margin: 20px;
     margin-bottom: 200px;
+    display: inline-block;
 }
 
 .projectcard a{
@@ -34,10 +35,15 @@
     transition: 0.3s all;
 }
 
-.projectcard a:hover{
-    color: white;
-}
+
 
 .projectcard p {
     padding: 20px;
 }
+
+.cardimg {
+    border-radius: 8px;
+    height: 250px;
+}
+
+
