@@ -1,7 +1,7 @@
 import styles from './About.module.css'
 import codingpic from '../assets/coding.jpg'
 import {FaHtml5, FaCss3, FaJava, FaNodeJs, FaPython, FaReact, FaLinux} from 'react-icons/fa'
-import {SiCplusplus, SiRacket, SiRstudio, SiJavascript, SiGnubash, SiTypescript} from 'react-icons/si'
+import {SiCplusplus, SiRacket, SiRstudio, SiJavascript, SiGnubash, SiTypescript, SiDjango, SiMysql} from 'react-icons/si'
 
 const pink = {color : "pink",}
 const blue = {color: "lightblue",}
@@ -10,6 +10,9 @@ const link = {text_decoration:"none",
 const purple = {color: "#cd9cff"}
 const yellow = {color: "#ffed9c"}
 const red = {color: "#b5fff3"}
+const green = {color: "darkgreen"}
+const orange = {color : "orange"}
+
 function Aboutcontent(){
     return(
         <><section id="aboutsection" className={styles.about}>
@@ -19,11 +22,12 @@ function Aboutcontent(){
             <section className={styles.aboutcontent}>
                 <div className={styles.aboutme}>
                     <h3>Who am I?</h3>
-                    <div>I am a <span style={blue}>Frontend Developer</span>,
-                            <span style={pink}> Mathematics</span> student at the <a href='uwaterloo.ca' style = {link}>University of Waterloo</a>. I am passionate in Mathematics as well as computer science. 
-                            I have been developing some projects regarding computer science on my own, including frontend projects using 
-                            <span style={purple}> React</span>, <span style={yellow}> CSS</span>, and <span style={red}>Javascript</span>. I am also interested in the field
-                            of data science. 
+                    <div>I am a <span style={blue}>Fullstack Developer</span>,
+                            <span style={pink}> Mathematics</span> student at the <a href='uwaterloo.ca' style = {link}>University of Waterloo</a>. 
+                            I am passionate in Mathematics as well as computer science. 
+                            I have been working on various self-initiated projects, including frontend development using
+                            <span style={purple}> React</span>, <span style={yellow}> CSS</span>, and <span style={red}>Javascript</span>. 
+                            Additionally, I implemented robust backend solution using <spam style={green}>Django</spam> and <spam style = {orange}>MySQL</spam>, ensuring seamless integration between user interfaces and server-side functionality.
                     </div>
                 </div>
                 <img className={styles.image} src={codingpic}></img>
@@ -83,6 +87,14 @@ function Aboutcontent(){
                         <div className={styles.skillcard}>
                             <SiGnubash className={styles.cardicon} />
                             <p className={styles.cardtext}>Bash</p>
+                        </div>
+                        <div className={styles.skillcard}>
+                            <SiDjango className={styles.cardicon} />
+                            <p className={styles.cardtext}>Django</p>
+                        </div>
+                        <div className={styles.skillcard}>
+                            <SiMysql className={styles.cardicon} />
+                            <p className={styles.cardtext}>MySQL</p>
                         </div>
                     </div>
                 </div>

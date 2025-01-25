@@ -1,6 +1,7 @@
 import styles from './Project.module.css'
 import gege from '../assets/Favicon.png'
 import gymloglogo from '../assets/Gym-log-logo.png'
+import expenselogo from '../assets/Expenseappfavicon.jpg'
 function Projectcontent(){
     return(
         <section id="projectsection" className={styles.project}>
@@ -10,6 +11,11 @@ function Projectcontent(){
                     <a href='https://github.com/Aaaaalexxxxxz/Personal-Website'><h3>My Personal Website</h3></a>
                     <img src={gege} className={styles.cardimg}></img>
                     <p>A fully responsive website built with React, Javascript and CSS.</p>
+                </div>
+                <div className={styles.projectcard}>
+                    <a href='https://github.com/Aaaaalexxxxxz/Expense-Tracking-App'><h3>Personal Expense Tracker</h3></a>
+                    <img src={expenselogo} className={styles.cardimg}></img>
+                    <p>Expense tracker implemented using Django DB and MySQL </p>
                 </div>
                 <div className={styles.projectcard}>
                     <a href='https://github.com/Aaaaalexxxxxz/Gym-Log'><h3>Online Gym Log</h3></a>
